@@ -2,12 +2,16 @@ import React from "react";
 
 import {} from "./styles";
 
+import { Container } from "@material-ui/core";
+
 const Home = () => {
     return (
         <>
-            <div>
-                <h1>Home</h1>
-            </div>
+            <Container>
+                <div>
+                    <h1>Home</h1>
+                </div>
+            </Container>
         </>
     );
 };
