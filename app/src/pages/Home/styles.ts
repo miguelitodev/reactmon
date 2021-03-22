@@ -15,6 +15,14 @@ export const Headline = styled.header`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
 `;
 
 export const Text = styled.div`
@@ -22,22 +30,45 @@ export const Text = styled.div`
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 `;
 
 export const Title = styled.h1`
     font-weight: bold;
     font-size: 96px;
     color: var(--title);
+
+    @media (max-width: 1024px) {
+        font-weight: bold;
+        font-size: 56px;
+        color: var(--title);
+    }
 `;
 
 export const Subtitle = styled.p`
     font-weight: normal;
     font-size: 24px;
     color: var(--subtitle);
+
+    @media (max-width: 1024px) {
+        font-weight: normal;
+        font-size: 14px;
+        color: var(--subtitle);
+    }
 `;
 
 export const RandomPokemon = styled.img`
     height: 340px;
+    @media (max-width: 1024px) {
+        height: 340px;
+        margin-top: 15px;
+    }
 `;
 
 export const MiddleLine = styled.div`
@@ -47,25 +78,25 @@ export const MiddleLine = styled.div`
     align-items: center;
 `;
 
-export const SpanTitle = styled.span`
-    font-weight: normal;
-    font-size: 18px;
-    color: var(--span);
-`;
-
-export const InputSearch = styled.input`
-    width: 550px;
-    padding: 15px;
-    border-radius: 50px;
-    color: var(--text-input);
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    outline: none;
+export const ButtonGo = styled.button`
     border: none;
-    background-color: var(--background-input);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(109, 109, 109, 1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(109, 109, 109, 1);
-    box-shadow: 0px 0px 5px 0px rgba(109, 109, 109, 1);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--light-green);
+    color: var(--white);
+    opacity: 0.85;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
 `;
 
 export const LastLine = styled.div`

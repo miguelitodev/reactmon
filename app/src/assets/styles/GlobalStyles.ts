@@ -20,6 +20,11 @@ export default createGlobalStyle`
     }
 
     :root {
+        // Colors
+        --white: #fff;
+        --light-green: #1c9d00;
+
+        // Color's Project
         --title: #595858;
         --subtitle: #6D6D6D;
         --span: #000000;
