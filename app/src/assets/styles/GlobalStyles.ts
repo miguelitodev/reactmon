@@ -52,7 +52,7 @@ export default createGlobalStyle`
         --type-steel: #5C8AA1;
         --type-fire: #F89030;
         --type-water: #8ABDDA;
-        --type-grass: #DAE79C;
+        --type-grass: #C8ECC9;
         --type-electric: #F1BC19;
         --type-psychic: #AF8FA3;
         --type-ice: #6FA8BB;
